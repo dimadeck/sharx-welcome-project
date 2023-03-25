@@ -1,5 +1,12 @@
 
 class IgnoreRule:
+    """
+    Класс, используемый для определения валидности "хлебной крошки" в методе URITreeBuilder._parse_uri
+
+    if IgnoreRule.is_valid(string):
+        # correct crumb
+        ...
+    """
     @classmethod
     def is_valid(cls, crumb: str) -> bool:
         raise NotImplementedError
